@@ -24,8 +24,7 @@ const serve = http.createServer((req, res) => {
     //   res.write(data);
     // }).on('end', () => {
     //   res.end();
-    // })
-    console.log(path,'path');
+    // }
     fs.createReadStream(path).pipe(res)
   }
 })
